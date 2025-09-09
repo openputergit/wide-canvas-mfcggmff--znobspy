@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Brick Wall Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .brick-pattern {
+            background-image: linear-gradient(rgba(71, 131, 155, 0.9), rgba(71, 131, 155, 0.9)),
+                            url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hover-brick:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Hero Section -->
+    <div class="brick-pattern min-h-screen flex flex-col justify-center items-center text-white p-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Building Dreams Into Reality</h1>
+            <p class="text-xl md:text-2xl mb-8">Crafting spaces that inspire and endure</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition duration-300">
+                Explore Our Work
+            </button>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="hover-brick p-6 rounded-lg shadow-lg bg-gray-50">
+                <i class="bi bi-building text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3">Modern Architecture</h3>
+                <p class="text-gray-600">Blending contemporary design with timeless craftsmanship for stunning results.</p>
+            </div>
+            <div class="hover-brick p-6 rounded-lg shadow-lg bg-gray-50">
+                <i class="bi bi-tools text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3">Expert Masonry</h3>
+                <p class="text-gray-600">Professional masonry services with attention to detail and quality materials.</p>
+            </div>
+            <div class="hover-brick p-6 rounded-lg shadow-lg bg-gray-50">
+                <i class="bi bi-patch-check text-4xl text-blue-600 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3">Quality Assured</h3>
+                <p class="text-gray-600">Every project backed by our commitment to excellence and customer satisfaction.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Gallery -->
+    <div class="py-16 px-4 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Recent Projects</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="hover-brick rounded-lg overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742" alt="Project 1" class="w-full h-64 object-cover">
+                <div class="p-4 bg-white">
+                    <h3 class="font-semibold mb-2">Modern Residence</h3>
+                    <p class="text-gray-600">Contemporary home design with classic brick elements</p>
+                </div>
+            </div>
+            <div class="hover-brick rounded-lg overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1604514628550-37477afdf4e3" alt="Project 2" class="w-full h-64 object-cover">
+                <div class="p-4 bg-white">
+                    <h3 class="font-semibold mb-2">Commercial Complex</h3>
+                    <p class="text-gray-600">Urban development with sustainable materials</p>
+                </div>
+            </div>
+            <div class="hover-brick rounded-lg overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811" alt="Project 3" class="w-full h-64 object-cover">
+                <div class="p-4 bg-white">
+                    <h3 class="font-semibold mb-2">Heritage Restoration</h3>
+                    <p class="text-gray-600">Preserving history with modern techniques</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <textarea placeholder="Message" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-semibold text-lg mb-4">About Us</h4>
+                <p class="text-gray-400">Dedicated to creating exceptional masonry work that stands the test of time.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-4">Services</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Residential Construction</li>
+                    <li>Commercial Projects</li>
+                    <li>Restoration Work</li>
+                    <li>Consulting</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="bi bi-geo-alt"></i> 123 Builder Street</li>
+                    <li><i class="bi bi-telephone"></i> (555) 123-4567</li>
+                    <li><i class="bi bi-envelope"></i> info@brickwork.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-2xl hover:text-blue-400"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+            <p>&copy; 2023 Brickwork Masonry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
